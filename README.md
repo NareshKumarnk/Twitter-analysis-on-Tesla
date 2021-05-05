@@ -18,7 +18,7 @@ METHOD:
 Machine-learning-based Approach:
     Machine learning methods often rely on supervised classification approaches where sentiment detection is framed as a binary which are positive and negative. This approach requires labelled data to train classifiers. This approach, it becomes apparent that aspects of the local context of a word need to be considered such as negative (e.g., Fall) and positive (e.g., Rise).
 </br>
-However, showed a basic paradigm for create a feature vector is: 
+However, showed a basic paradigm for create a feature vector is:</br> 
 •	Apply a part of speech tagger to each tweet post</br> 
 •	Collect all the adjective for entire tweet posts </br>
 •	Make a popular word set composed of the top N adjectives</br>
@@ -27,16 +27,21 @@ However, showed a basic paradigm for create a feature vector is:
 2.	Number of negative words 
 3.	Presence, absence, or frequency of each word
 </br>
-•	MODEL DEVELOPMENT:
+•	MODEL DEVELOPMENT:</br>
+
 1.	we decided to proceed with topic modelling as our analytical approach for model development. The idea is for us to identify topics as set of documents, select the right topic and create a final stock market Dataframe for prediction. In terms of topic modelling, we have selected Latent Dirichlet Allocation (LDA).</br>
+
 2.	LDA is an unsupervised learning that views the documents as bag of words. In each topic that is generated, picks a set of words against it. Below outlines the each step the LDA does.</br>
 	Assume there are k topics across all the documents.
 	Distribute these topics across a document by assigning each word a topic.
 	For each word in the document, assume its topic is wrong but every other word is assigned the topic is correct.
 	Assign a word for each topic based on what topics are in the document and how many times a word has been assigned to a particular topic across all the documents.
 	Repeat this process several times for each document.</br>
+
 3.	Per-Document Classification: The tidy text package provides this method for extracting the per-topic-per-word probabilities, called β (“beta”), from the LDA model.</br>
+
 4.	Document-topic probabilities: Besides estimating each topic as a mixture of words, LDA also models each document as a mixture of topics. We can examine the per-document-per-topic probabilities, called γ (“gamma”), with the matrix = "gamma" argument to tidy ().
+
 </br>
 •	SENTIMENT ANALYSIS: </br>
 In the sentiment analysis, each tweet will get an emotion score. The ‘Syuzhet’ package breaks the emotion into 10 different emotions: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative and positive. Each tweet will be evaluated by these 10 emotions and then assigned a sum score.
