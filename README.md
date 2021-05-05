@@ -1,11 +1,11 @@
 # Twitter-analysis-on-Tesla
-ABSTRACT:
+ABSTRACT:</br>
     With the rapid development of Internet technology, people are increasingly accustomed to obtaining information and expressing their sentiments on the Internet. In the financial market, the sentiments in the financial news are supposed to have some correlation with the movement of the stock market. This paper aims to explore such correlation by conducting an empirical and data analysis.</br>
 </br>
-INTRODUCTION:
+INTRODUCTION:</br>
     Sentiment analysis is the process of identifying the opinion expressed in text. Recently it has been used to study behavioural finance, and in particular the effect of opinions and emotions on economic or financial decisions. Sentiment analysis refers to the general method to extract polarity and subjectivity from semantic orientation which refers to the strength of words and polarity text or phrases. This project focuses on the financial market as the domain for sentiment analysis of text.</br>
 </br>
-MODULES:
+MODULES:</br>
 •	Streaming data from Twitter</br>
 •	Pre-processing data</br>
 •	Analysing the data</br>
@@ -44,12 +44,14 @@ However, showed a basic paradigm for create a feature vector is:</br>
 
 </br>
 •	SENTIMENT ANALYSIS: </br>
-In the sentiment analysis, each tweet will get an emotion score. The ‘Syuzhet’ package breaks the emotion into 10 different emotions: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative and positive. Each tweet will be evaluated by these 10 emotions and then assigned a sum score.
 
+In the sentiment analysis, each tweet will get an emotion score. The ‘Syuzhet’ package breaks the emotion into 10 different emotions: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative and positive. Each tweet will be evaluated by these 10 emotions and then assigned a sum score.
+</br>
 •	We have defined the topics in sets of documents using LDA topics modelling, we have also assigned a tweet score with our sentiment analysis. Our next step is to map the sentiment scores against the stock price change.
  
 
   IMPLEMENTATION:</br>
+
 •	Separating date and hour from timestamp</br>
 •	Remove meaningless characters and symbols</br>
 •	Remove all non-ASCII characters from text</br>
