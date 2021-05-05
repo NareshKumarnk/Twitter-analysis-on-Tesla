@@ -49,6 +49,7 @@ In the sentiment analysis, each tweet will get an emotion score. The ‘Syuzhet�
 </br>
 •	We have defined the topics in sets of documents using LDA topics modelling, we have also assigned a tweet score with our sentiment analysis. Our next step is to map the sentiment scores against the stock price change.
  
+![image](https://user-images.githubusercontent.com/66820548/117193290-4e310300-ae00-11eb-99cd-94d7f16630b5.png)
 
   IMPLEMENTATION:</br>
 
