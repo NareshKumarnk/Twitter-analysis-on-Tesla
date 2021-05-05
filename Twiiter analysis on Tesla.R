@@ -42,10 +42,10 @@ stocks.df2 <- stocks_raw2 %>%
 head(stocks.df)
 
 app <- "Financial_tweet_analysis"
-api_key <- 'szfR3T5ITmJGxpRNodUwh853B'
-api_secret_key <- '4nYZHU8ZzCZFheQJSQOpz2ow1w7mToBqem0VVI5NKVJONiWels'
-access_token <- '2454454268-BP3jFFnuIyxpPSRCzeWjPcxyNsqqWcEdOBrSc4l'
-access_token_secret <- 'i8XHiRCp8HwThczf4uhKOrtaO2tHxYqHGE3TNE8xKWupT'
+api_key <- 'XXX'
+api_secret_key <- 'XXX'
+access_token <- 'XXX'
+access_token_secret <- 'XXX'
 
 ## authenticate via web browser
 token <- create_token(
